@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    articleo:{
+    article1:{
         title:'RCWEB|1',
         date:'22AUG',
         heading:'RC1',
@@ -16,7 +16,7 @@ var articles={
                   WELCOME TO MY FIRST WEBAPP, ThANKS FOR VISITING.
                  </p>`
     },
-    articlet:{
+    article2:{
         title:'RCWEB|2',
         date:'22AUG',
         heading:'RC2',
@@ -26,7 +26,7 @@ var articles={
                   WELCOME TO MY FIRST WEBAPP, ThANKS FOR VISITING.
                  </p>`
     },
-    articleth:{
+    article3:{
         title:'RCWEB|3',
         date:'22AUG',
         heading:'RC3',
@@ -74,8 +74,9 @@ return htmlTemp;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article_1', function (req, res) {
-  res.send(createmp(articleo));
+app.get('/articleName', function (req, res) {
+    var articleName= res.params.articleName;
+  res.send(createmp(articles[articleName]));
 });
 app.get('/article_2', function (req, res) {
  res.send(createmp(articlet));
