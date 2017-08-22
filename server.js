@@ -77,7 +77,7 @@ app.get('/', function (req, res) {
 //app.get('/:articleName', function (req, res) {
   //  var articleName= req.params.articleName;
   //res.send(createmp(articles[articleName]));
-});
+//});
 app.get('/article_2', function (req, res) {
  res.send(createmp(articlet));
 });
