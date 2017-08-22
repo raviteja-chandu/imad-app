@@ -75,16 +75,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article_1', function (req, res) {
-  res.sendFile(createmp(articles.article1));
+  res.send(createmp(article1));
 });
 app.get('/article_2', function (req, res) {
- res.sendFile(createmp(article2));
+ res.send(createmp(article2));
 });
 app.get('/article_3', function (req, res) {
-  res.sendFile(createmp(article3));
+  res.send(createmp(article3));
 });
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.send(path.join(__dirname, 'ui', 'style.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
