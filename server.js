@@ -18,8 +18,8 @@ app.get('/article_2', function (req, res) {
 app.get('/article_3', function (req, res) {
   res.send(createmp(articleth));
 });
-app.get('/ui/style.css', function (req, res) {
-  res.send(path.join(__dirname, 'ui', 'style.css'));
+app.get('/ui/style1.css', function (req, res) {
+  res.send(path.join(__dirname, 'ui', 'style1.css'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
