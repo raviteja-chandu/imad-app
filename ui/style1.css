@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    background-color: grey;
+    margin-top: 75px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 400%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
+}
