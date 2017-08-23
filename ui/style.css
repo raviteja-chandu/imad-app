@@ -1,21 +1,21 @@
-body {
+body{
     font-family: sans-serif;
     background-color: grey;
     margin-top: 75px;
 }
 
-.center {
+.center{
     text-align: center;
 }
 
-.text-big {
+.text-big{
     font-size: 400%;
 }
 
-.bold {
+.bold{
     font-weight: bold;
 }
 
-.img-medium {
+.img-medium{
     height: 200px;
 }
